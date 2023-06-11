@@ -60,10 +60,10 @@ class Header extends React.Component {
                                                 <div className="nav-search search-switch">
                                                     <span className="flaticon-search"></span>
                                                 </div>
-                                            </li>
-                                            <li><Link to="/login"><span className="flaticon-user"></span></Link></li>
+                                            </li>                                           
                                             <li><Link to="/favourite"><span className="flaticon-heart"></span></Link></li>
                                             <li><Link to="/cart"><span className="flaticon-shopping-cart"></span></Link> </li>
+                                            <li><Link to="/login"><span className="flaticon-user"></span></Link></li>
                                         </ul>
                                     </div>
                                 </div>

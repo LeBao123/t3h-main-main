@@ -1,6 +1,5 @@
 import React from "react";
 import Shop_method from "../Shop_method";
-
 class Login extends React.Component {
     render() {
         return (
@@ -38,17 +37,17 @@ class Login extends React.Component {
                                             Please Sign in now</h3>
                                         <form className="row contact_form" action="#" method="post" novalidate="novalidate">
                                             <div className="col-md-12 form-group p_star">
-                                                <input type="text" className="form-control" id="name" name="name" value="" placeholder="Username" />
+                                                <input type="text" class="form-control" id="username" name="username" placeholder="User Name" />
                                             </div>
-                                            <div className="col-md-12 form-group p_star">
-                                                <input type="password" className="form-control" id="password" name="password" value="" placeholder="Password" />
+                                            <div class="col-md-12 form-group p_star">
+                                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" />
                                             </div>
-                                            <div className="col-md-12 form-group">
+                                            <div class="col-md-12 form-group">
                                                 <div className="creat_account d-flex align-items-center">
                                                     <input type="checkbox" id="f-option" name="selector" />
-                                                    <label for="f-option">Remember me</label>
+                                                    <label for="f-option"> Remember me</label>
                                                 </div>
-                                                <button type="submit" value="submit" className="btn_3">
+                                                <button type="submit" value="submit" className="btn_3   ">
                                                     log in
                                                 </button>
                                                 <a className="lost_pass" href="#">forget password?</a>
