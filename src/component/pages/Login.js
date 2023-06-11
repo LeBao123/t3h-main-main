@@ -1,7 +1,38 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Shop_method from "../Shop_method";
-class Login extends React.Component {
-    render() {
+import UserContext from "../context/UserContext";
+import { NavLink } from "react-router-dom";
+
+function Login(props){
+        useEffect(() => {
+            loginFunction();
+        }, []);      
+
+  const loginFunction = () => {
+    // ("#login-button").click(function (event) {
+    //     var userName = document.getElementById("userName").value;
+    //     var pwd = document.getElementById("pwd").value;
+    //     if (userName == "admin" && pwd == "admin") {
+    //       event.preventDefault();
+    //       ("form").fadeOut(500);
+    //       (".wrapper").addClass("form-success");
+    //       setTimeout(function () {
+    //         // location.href = "admin.html";
+    //       }, 2000);
+    //     }
+    //     else if (userName == "user" && pwd == "user"){
+    //         event.preventDefault();
+    //         ("form").fadeOut(500);
+    //         (".wrapper").addClass("form-success");
+    //         setTimeout(function () {
+    //         //   location.href = "user.html";
+    //         }, 2000);  
+    //     }
+    //     else {
+    //       alert("Wrong Password");
+    //     }
+    //   });
+  }
         return (
             <div>
                 <div className="slider-area ">
@@ -61,6 +92,6 @@ class Login extends React.Component {
                 </section>
             </div>
         )
-    }
-}
+}    
+
 export default Login;
