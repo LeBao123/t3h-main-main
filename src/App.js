@@ -5,7 +5,6 @@ import AddItem from './component/pages/AddItem';
 
 import { UserProvider } from "./component/context/UserContext";
 import store from "./component/context/store";
-// import Db from "../Db";
 import { UserContext } from "./component/context/UserContext";
 import Header from './component/Header';
 import Footer from './component/Footer';

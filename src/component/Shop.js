@@ -124,7 +124,7 @@ function Shop(props) {
                                                                 <span><a href="javascript:void(0);" onClick={()=>{addToCart(b)}}> Add to cart</a></span>                                                      
                                                         </div>
                                                         <div className="favorit-items">
-                                                            <a href="javascript:void(0);" onClick={()=>{addToWishlist(b)}}><span className="flaticon-heart"></span></a>
+                                                            <a href="javascript:void();" onClick={()=>{addToWishlist(b)}}><span className="flaticon-heart"></span></a>
                                                         </div>
                                                     </div>
                                                     <div className="popular-caption">

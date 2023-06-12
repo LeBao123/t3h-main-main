@@ -1,5 +1,6 @@
 import React from "react";
 import Shop_method from "./Shop_method";
+import { NavLink } from "react-router-dom";
 class Home extends React.Component {
     render() {
         return (
@@ -267,7 +268,7 @@ class Home extends React.Component {
 
                         <div className="row justify-content-center">
                             <div className="room-btn pt-70">
-                                <a href="catagori.html" className="btn view-btn1">View More Products</a>
+                                <NavLink to="/Shop"className="btn view-btn1">View More Products</NavLink>
                             </div>
                         </div>
                     </div>

@@ -1,26 +1,25 @@
 import React,{useEffect, useState} from "react";
 import Shop_method from "../Shop_method";
 import UserContext from "../context/UserContext";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 const Favourite = (props) => {
+    const [favourite, setFavourite] = useState([]);
     const [count, setCount] = useState(0);
     const { state, dispatch } = React.useContext(UserContext);
-    const [products, setProducts] = useState(state.favourite);
-
+    // const [product, setProduct] = useState(state.favourite);
     const upCount = () => {
         setCount(count + 1);
     }
-    const addToWishlist = (product)=>{
+    const addToWishlist = (favourite)=>{
         let check = false;
         state.favourite.map(f=>{
-            if(f.id == product.id){
+            if(f.id == favourite.id){
                 check =  true;    
             }
             return f;
         })
         if(check == false){
-            products.qty = 1;
-            state.favourite.push(product);
+            favourite.qty = 1;
+            state.favourite.push(favourite);
         }
         dispatch({type:"update_favorite",payload:state.favourite});
         setTimeout(()=>{
@@ -76,7 +75,7 @@ const Favourite = (props) => {
                                 </thead>
                                 <tbody>
                                     {
-                                        state.favourite.map((b,t) => {
+                                        favourite.map((b,t) => {
                                             return (
                                                 <tr>
                                                     <td>
@@ -102,8 +101,10 @@ const Favourite = (props) => {
                                                     </td>
                                                     <td>
                                                         {/* <h5>${b.price * b.qty}</h5> */}
+                                                        <a href="javascript:void(0);" onClick={()=>{addToWishlist(b)}}><span className="flaticon-heart"></span></a>
                                                     </td>
                                                     <td className="shoping__cart__item__close">
+                                                        <a href="javascript:void(0);" onClick={()=>{addToWishlist(b)}}><span className="flaticon-heart"></span></a>
                                                         <span onClick={() => { RemoveWishlist(b) }} className="icon_close">x</span>
                                                     </td>
                                                 </tr>
