@@ -1,7 +1,7 @@
 import api from "../api";
 
 export const get = async (limit,skip)=>{
-    const url = `/v1/e04f3fcd-4aa8-4ca4-9378-9709a978ad7d`;    
+    const url = `v1/304497f1-e61c-4377-b347-1ce794a1acc3`;    
     // \public\data.json
     // products?limit=${limit}&skip=${skip}
     try { 

@@ -1,9 +1,9 @@
-
 import Shop_method from "./Shop_method";
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "./context/UserContext";
 import { get } from "../service/product.service";
+
 
 function Shop(props) {
     const [products, setProducts] = useState([]);
@@ -114,7 +114,7 @@ function Shop(props) {
                             <div className="row">
                                 {
                                     //  assets/img/gallery/popular1.png 
-                                    products.map((b,t) => {
+                                    products.map((b, t) => {
                                         return (
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                                 <div className="single-popular-items mb-50 text-center">
@@ -122,10 +122,10 @@ function Shop(props) {
                                                         <img src={b.thumbnail} height="270" alt="" />
                                                         <noscript><image src={b.images} height="270" alt="" /></noscript>
                                                         <div className="img-cap">
-                                                                <span><a href="javascript:void(0);" onClick={()=>{addToCart(b)}}> Add to cart</a></span>                                                      
+                                                            <span><a href="javascript:void(0);" onClick={() => { addToCart(b) }}> Add to cart</a></span>
                                                         </div>
                                                         <div className="favorit-items">
-                                                            <a href="javascript:void();" onClick={()=>{addToWishlist(b)}}><span className="flaticon-heart"></span></a>
+                                                            <a href="javascript:void();" onClick={() => { addToWishlist(b) }}><span className="flaticon-heart"></span></a>
                                                         </div>
                                                     </div>
                                                     <div className="popular-caption">
@@ -344,7 +344,7 @@ function Shop(props) {
 
                         {/* <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                             <div className="row"> */}
-                                {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                     <div className="single-popular-items mb-50 text-center">
                                         <div className="popular-img">
                                             <img src="assets/img/gallery/popular1.png" alt="" />
@@ -362,7 +362,7 @@ function Shop(props) {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                     <div className="single-popular-items mb-50 text-center">
                                         <div className="popular-img">
                                             <img src="assets/img/gallery/popular2.png" alt="" /><noscript><img src="assets/img/gallery/popular2.png"
@@ -380,7 +380,7 @@ function Shop(props) {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                     <div className="single-popular-items mb-50 text-center">
                                         <div className="popular-img">
                                             <img src="assets/img/gallery/popular3.png" alt="" /><noscript><img src="assets/img/gallery/popular3.png"
@@ -398,7 +398,7 @@ function Shop(props) {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                     <div className="single-popular-items mb-50 text-center">
                                         <div className="popular-img">
                                             <img src="assets/img/gallery/popular4.png" alt="" />
@@ -416,7 +416,7 @@ function Shop(props) {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                     <div className="single-popular-items mb-50 text-center">
                                         <div className="popular-img">
                                             <img src="assets/img/gallery/popular5.png" alt="" /><noscript><img src="assets/img/gallery/popular5.png"
@@ -434,7 +434,7 @@ function Shop(props) {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                     <div className="single-popular-items mb-50 text-center">
                                         <div className="popular-img">
                                             <img src="assets/img/gallery/popular6.png" alt="" /><noscript><img src="assets/img/gallery/popular6.png"
@@ -452,7 +452,7 @@ function Shop(props) {
                                         </div>
                                     </div>
                                 </div> */}
-                            {/* </div>
+                        {/* </div>
                         </div> */}
                     </div>
                 </div>
