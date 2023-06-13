@@ -58,7 +58,7 @@ class Product_details extends React.Component {
                                             <p>$5</p>
                                         </div>
                                         <div className="add_to_cart">
-                                            <NavLink to="/cart" className="btn_3">add to cart</NavLink>
+                                            <NavLink to="/shop" className="btn_3">add to cart</NavLink>
                                         </div>
                                     </div>
                                 </div>

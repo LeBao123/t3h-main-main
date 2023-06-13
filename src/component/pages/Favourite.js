@@ -5,7 +5,7 @@ const Favourite = (props) => {
     const [favourite, setFavourite] = useState([]);
     const [count, setCount] = useState(0);
     const { state, dispatch } = React.useContext(UserContext);
-    // const [product, setProduct] = useState(state.favourite);
+    // const [favourite, setFavourite] = useState(state.favourite);
     const upCount = () => {
         setCount(count + 1);
     }
@@ -28,10 +28,10 @@ const Favourite = (props) => {
         
         localStorage.setItem("state",JSON.stringify(state));   
     }
-    const RemoveWishlist = (product) => {
+    const RemoveWishlist = (favourite) => {
         const new_wishlist = [];
         state.favourite.map(f => {
-            if (f.id == product.id) {
+            if (f.id == favourite.id) {
                 new_wishlist.push(f);
             }
         })

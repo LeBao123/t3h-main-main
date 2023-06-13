@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "./context/UserContext";
 import { get } from "../service/product.service";
+
 function Shop(props) {
     const [products, setProducts] = useState([]);
     const [total, setTotal] = useState(100);
